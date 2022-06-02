@@ -1,3 +1,2 @@
 #!/bin/bash
-export CFILE="main.c"; gcc -o main.o $CFILE
-
+gcc -o main.o $CFILE

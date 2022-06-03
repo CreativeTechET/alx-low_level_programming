@@ -12,9 +12,9 @@
 int main(void)
 {
 
-	int n, lastDigit;
-
-	char str[] = "Last digit of";
+	int n, lastDigit, zero;
+	zero = 0;
+	char str[15] = "Last digit of";
 
 	srand(time(0));
 
@@ -24,7 +24,7 @@ int main(void)
 	{
 		printf("%s %d is %d and is less than 6 and not 0\n", str, n, lastDigit);
 	}
-	else if (lastDigit == 0)
+	else if (lastDigit == zero)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, lastDigit);
 	}

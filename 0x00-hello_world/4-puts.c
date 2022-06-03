@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
-* main — function main body
-* Description: describe what the function does
-* Return: always return 0 / 1 depends on the function
+* main — main function
+* Description: function prints Programming string
+* Return: always return 0  depends on the function
+* 
+* print out string
 */
 
 int main(void)

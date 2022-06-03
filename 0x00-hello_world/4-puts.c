@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main — function
+* main — function main body
 * Description: describe what the function does
 * Return: always return 0 / 1 depends on the function
 */

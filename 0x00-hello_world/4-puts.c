@@ -1,12 +1,9 @@
 #include <stdio.h>
-
 /**
-* main — main function
-* Description: function prints Programming string
-* Return: always return 0  depends on the function
-* 
-* print out string
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {

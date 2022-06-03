@@ -9,11 +9,13 @@
 
 int main(void)
 {
+	int n = 'A';
 
-	for (int n = 'A'; n <= 'Z'; n++)
+	if (n <= 'Z')
 	{
-		putchar(tolower(n));
+		putchar(n);
 		putchar('\n');
+		n++;
 	}
 	return (0);
 }

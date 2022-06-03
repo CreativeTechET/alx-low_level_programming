@@ -13,7 +13,9 @@ int main(void)
 
 	for (n = 'A'; n <= 'Z'; n++)
 	{
-		if (n != 'Q' || n != 'E')
+		if (n == 'Q' || n == 'E')
+		{}
+		else
 		{
 			putchar(tolower(n));
 		}

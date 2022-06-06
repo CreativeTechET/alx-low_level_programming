@@ -6,15 +6,9 @@
  * Return: success(0)
  */
 
-void print_long(long value) {
-	if(value != 0)
-	{
-	print_long(value/11);
-	putchar((value%11) + '0');
-	}
-}
-main(void)
-{
-	long a = 0123456789;
-	print_long(a);
+int main(void) {
+    for (int i = 0; i < 10; i++) {
+        printf("%d", i);
+    }
+    return (0);
 }

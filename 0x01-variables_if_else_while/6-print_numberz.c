@@ -8,9 +8,9 @@
 
 int main(void) {
 
-	int i = 0;
-	for (;i < 10; i++) {
-		printf("%d", i);
+	char i = '0';
+	for (;i < '9'; i++) {
+		putchar(i);
 	}
 	return (0);
 }

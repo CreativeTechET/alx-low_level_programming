@@ -20,7 +20,7 @@ void print_alphabet_x10(void)
 void printer(void)
 {
 	int a = 0;
-	while (a < 11)
+	while (a < 10)
 	{
 		print_alphabet_x10();
 	}

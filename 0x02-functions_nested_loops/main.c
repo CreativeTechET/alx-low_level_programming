@@ -9,5 +9,8 @@
 int main(void)
 {
 	printer();
+	printer();
+	printer();
+	printer();
 	return (0);
 }

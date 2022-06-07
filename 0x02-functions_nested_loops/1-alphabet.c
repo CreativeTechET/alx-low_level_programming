@@ -8,16 +8,16 @@
 
 void print_alphabet(void)
 {
-        /**
-        * print_alphabet - prints all the alphabets
-        *
-        * Return: a character value
-        */
+	/**
+	* print_alphabet - prints all the alphabets
+	*
+	* Return: a character value
+	*/
 
-        int i = 97;
+	int i = 97;
 
-        for (; i < 123; i++)
-        {
-                putchar(i);
-        }
+	for (; i < 123; i++)
+	{
+		_putchar(i);
+	}
 }

@@ -3,9 +3,7 @@
 /**
  * main - check the code
  *
- * print_alphabet - prints all the alphabets
- *
- * Return: Always (0).
+ * Return: Always (0)
  */
 
 void print_alphabet(void);

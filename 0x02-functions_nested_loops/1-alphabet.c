@@ -9,9 +9,7 @@
  * Return: Always (0).
  */
 
-char print_alphabet(void);
-
-char print_alphabet(void)
+void print_alphabet(void)
 {
 	/**
 	* print_alphabet - prints all the alphabets
@@ -24,7 +22,6 @@ char print_alphabet(void)
 	{
 		putchar(i);
 	}
-	return (i);
 }
 
 int main(void)

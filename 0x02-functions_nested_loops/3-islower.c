@@ -2,7 +2,9 @@
 #include <ctype.h>
 
 /**
-* _islower - returns 1 if c is lowercase and return 0 if c is uppercase
+* _islower - returns 1 if 'c' is lowercase and return 0 if 'c' is uppercase
+*
+* @c: parameter for character
 *
 * Return: Always 0.
 */

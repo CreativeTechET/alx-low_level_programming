@@ -7,7 +7,7 @@ int _islower(int c)
 	{
 		return (1);
 	}
-	eles
+	else
 	{
 		return (0);
 	}

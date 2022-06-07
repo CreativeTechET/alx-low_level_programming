@@ -16,7 +16,7 @@ void printer(void)
 	int i = 0;
 	while (i < 10)
 	{
-		print_alphabet_10_times();
+		print_alphabet_x10();
 		i++;
 	}
 }

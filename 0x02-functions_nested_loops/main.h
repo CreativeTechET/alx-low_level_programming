@@ -12,6 +12,7 @@ void printer(void);
 int print_sign(int n);
 int _isalpha(int c);
 int _abs(int);
+int add(int a, int b);
 int print_last_digit(int);
 int _islower(int c);
 #endif

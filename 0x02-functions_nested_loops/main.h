@@ -1,17 +1,11 @@
-#include <stdio.h>
 
-void print_alphabet(void)
-{
-        /**
-        * print_alphabet - prints all the alphabets
-        *
-        * Return: a character value
-        */
+#ifndef MAIN_H
+#define MAIN_H
 
-        int i = 97;
+#include <unistd.h>
 
-        for (; i < 123; i++)
-        {
-                putchar(i);
-        }
-}
+int _putchar(char c);
+
+void print_alphabet(void);
+
+#endif

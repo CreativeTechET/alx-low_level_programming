@@ -23,5 +23,6 @@ void printer(void)
 	while (a < 10)
 	{
 		print_alphabet_x10();
+		a++;
 	}
 }

@@ -3,7 +3,9 @@
 
 /**
  * _abs - get the absolute value of integer
+ * 
  * @n: number
+ *
  * Return: computed value
  */
 

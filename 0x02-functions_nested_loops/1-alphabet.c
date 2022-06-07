@@ -9,6 +9,8 @@
  * Return: Always (0).
  */
 
+char print_alphabet(void);
+
 char print_alphabet(void)
 {
 	/**

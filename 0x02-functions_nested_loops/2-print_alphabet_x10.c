@@ -8,21 +8,12 @@ void print_alphabet_x10(void)
 	* Return: a character value
 	*/
 
-	int i = 97;
-
-	for (; i < 123; i++)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
-}
-
-void printer(void)
-{
-	int a = 0;
-	while (a < 10)
-	{
-		print_alphabet_x10();
-		a++;
-	}
+	char alphabet = 'a';
+	for (int i = 0; i < 10; i++) {
+		for (int j = 0; j < 26; j++) {
+			_putchar(alphabet);
+		}
+		_putchar('\n');
+		alphabet++;
+		}
 }

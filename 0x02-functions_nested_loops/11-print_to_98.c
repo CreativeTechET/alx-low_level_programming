@@ -6,7 +6,7 @@ void print_to_98(int n)
 
 	if (n > 98)
 	{	int i;
-		for (i = n; i > 97; i--)
+		for (i = n; i > 99; i--)
 		{
 
 			if (n == 98)

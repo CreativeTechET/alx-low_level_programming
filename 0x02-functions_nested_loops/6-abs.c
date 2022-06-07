@@ -3,7 +3,7 @@
 
 /**
  * _abs - get the absolute value of integer
- * @n: number to compute
+ * @n: number to be computed
  *
  * Return: computed value
  */

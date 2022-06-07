@@ -3,7 +3,8 @@
 void print_alphabet_x10(void)
 {
 	char alphabet = 'a';
-	for (int i = 0; i < 26; i++) {
+	int i;
+	for (i = 0; i < 26; i++) {
 		putchar(alphabet);
 		alphabet++;
 	}

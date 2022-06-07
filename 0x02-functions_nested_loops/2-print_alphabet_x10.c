@@ -5,10 +5,10 @@ void print_alphabet_x10(void)
 	char alphabet = 'a';
 	int i;
 	for (i = 0; i < 26; i++) {
-		putchar(alphabet);
+		_putchar(alphabet);
 		alphabet++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
 
 void printer(void)

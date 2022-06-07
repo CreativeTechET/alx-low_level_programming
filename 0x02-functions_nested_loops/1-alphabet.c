@@ -9,6 +9,15 @@
  * Return: Always (0).
  */
 
+void print_alphabet(void);
+
+int main(void)
+{
+	print_alphabet();
+	printf("\n");
+	return (0);
+}
+
 void print_alphabet(void)
 {
 	/**
@@ -16,17 +25,11 @@ void print_alphabet(void)
 	*
 	* Return: a character value
 	*/
+
 	int i = 97;
 
 	for (; i < 123; i++)
 	{
 		putchar(i);
 	}
-}
-
-int main(void)
-{
-	print_alphabet();
-	printf("\n");
-	return (0);
 }

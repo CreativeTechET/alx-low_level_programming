@@ -12,8 +12,16 @@ void print_alphabet_x10(void)
 
 	for (; i < 123; i++)
 	{
-		char str[] += i;
+		_putchar(i);
 	}
-	_putchar(str);
 	_putchar('\n');
+}
+
+void printer(void)
+{
+	int a;
+	for (a = 0; a < 11; a++)
+	{
+		print_alphabet_x10();
+	}
 }

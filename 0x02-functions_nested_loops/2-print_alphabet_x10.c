@@ -19,8 +19,8 @@ void print_alphabet_x10(void)
 
 void printer(void)
 {
-	int a;
-	for (a = 0; a < 11; a++)
+	int a = 0;
+	while (a < 11)
 	{
 		print_alphabet_x10();
 	}

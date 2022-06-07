@@ -6,23 +6,28 @@
  *
  * print_alphabet - prints all the alphabets
  *
- * Return: Always 0.
+ * Return: Always (0).
  */
 
 char print_alphabet(void)
 {
-        int i = 97;
+	/**
+	* print_alphabet - prints all the alphabets
+	*
+	* Return: a character value
+	*/
+	int i = 97;
 
-        for (; i < 123; i++)
-        {
-                putchar(i);
-        }
-        return (i);
+	for (; i < 123; i++)
+	{
+		putchar(i);
+	}
+	return (i);
 }
 
 int main(void)
 {
-	print_alphabet();
+	print_alphabe();
 	printf("\n");
 	return (0);
 }

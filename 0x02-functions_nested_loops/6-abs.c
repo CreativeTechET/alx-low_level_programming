@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctye.h>
 
 int _abs(int n)
 {

@@ -14,6 +14,6 @@ void print_alphabet_x10(void)
 	{
 		char str[] += i;
 	}
-	_putchar("str");
+	_putchar(str);
 	_putchar('\n');
 }

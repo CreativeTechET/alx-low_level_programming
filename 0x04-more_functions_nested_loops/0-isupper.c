@@ -3,7 +3,7 @@
 
 /**
  * _isupper - converts a chatr into uppercase char
- *
+ * @c: the number to be checked
  * Return: the converted char
  */
 

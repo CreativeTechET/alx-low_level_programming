@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 
 
 void print_triangle(int size)
@@ -9,14 +9,17 @@ void print_triangle(int size)
 
 	if (size == 0)
 	{
-		printf('\n');
+		printf("\n");
 	}
 	else
 	{
+		int i;
 
-		for (int i = 0; i < height; i++)
+		for (i = 0; i < height; i++)
 		{
-			for (int j = 0; j < base; j++)
+			int j;
+
+			for (j = 0; j < base; j++)
 			{
 				if (j < base - i - 1)
 				{
@@ -24,7 +27,7 @@ void print_triangle(int size)
 				}
 				else
 				{
-					printf("*");
+					printf("#");
 				}
 			}
 			printf("\n");

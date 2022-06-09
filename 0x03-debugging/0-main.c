@@ -11,5 +11,18 @@ int main(void)
 
 	i = 0;
 	positive_or_negative(i);
+
+	if (i > 0)
+	{
+		printf("%d is positive", i);
+	}
+	else if (i == 0)
+	{
+		printf("%d is zero", i);
+	}
+	else
+	{
+		printf("%d is negative", i);
+	}
 	return (0);
 }

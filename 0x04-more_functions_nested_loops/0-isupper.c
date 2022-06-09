@@ -9,7 +9,12 @@
 
 int _isupper(int c)
 {
-	char context = isupper(c);
-
-	return (context);
+	if (isupper(c))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

@@ -13,7 +13,7 @@ void print_triangle(int size)
 
 	if (size == 0)
 	{
-		printf("\n");
+		_putchar('\n');
 	}
 	else
 	{
@@ -27,11 +27,11 @@ void print_triangle(int size)
 			{
 				if (j < base - i - 1)
 				{
-					printf(" ");
+					_putchar(' ');
 				}
 				else
 				{
-					printf("#");
+					_putchar(35);
 				}
 			}
 			printf("\n");

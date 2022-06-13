@@ -8,26 +8,5 @@
 
 void puts_half(char *str)
 {
-	int len = strlen(str);
-
-	if (len % 2)
-	{
-		int n = len / 2;
-		int i = n + 1;
-		int j;
-
-		for (j = 0; j < len; j++)
-		{
-			while (i > n)
-			{
-
-				if (i <= len)
-				{
-					break;
-				}
-				printf("%c", str[i]);
-				i++;
-			}
-		}
-	}
+	printf("%c", str + (strlen(str) / 2));
 }

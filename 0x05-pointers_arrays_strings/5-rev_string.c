@@ -10,4 +10,5 @@ void rev_string(char *s)
 	{
 		printf("%c", s[len]);
 	}
+	printf("\n");
 }

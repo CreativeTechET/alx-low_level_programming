@@ -8,5 +8,5 @@
 
 void puts_half(char *str)
 {
-	printf("%c", str + (strlen(str) / 2));
+	printf("%s", str + strlen(str) / 2);
 }

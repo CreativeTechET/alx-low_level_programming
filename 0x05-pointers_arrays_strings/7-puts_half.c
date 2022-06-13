@@ -9,6 +9,8 @@
 void puts_half(char *str)
 {
 	if (strlen(str) % 2)
+	}
+	else
 	{
 		printf("%s\n", str + strlen(str) / 2);
 	}

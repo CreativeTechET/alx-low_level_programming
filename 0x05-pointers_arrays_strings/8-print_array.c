@@ -11,11 +11,11 @@ void print_array(int *a, int n)
 {
 	int i;
 	
-	if (a[i]=!'\0')
+	if (a[i] =! '\0')
 	{
 		for (i = 0; i < n; i++)
 		{
-			printf("%i, ",a[i]);
+			printf("%i, ", a[i]);
 		}
 	}
 	else

@@ -19,9 +19,10 @@ void puts_half(char *str)
 		{
 			if (i <= len)
 			{
-				printf("%c", str[i]);
-				i++;
+				break;
 			}
+			printf("%c", str[i]);
+			i++;
 		}
 	}
 }

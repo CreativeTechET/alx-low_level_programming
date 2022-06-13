@@ -12,12 +12,13 @@ void puts_half(char *str)
 
 	if (len % 2)
 	{
-		int i = 0;
 		int n = len / 2;
+		int i = n + 1;
 
-		while (i < n)
+		while (i > n)
 		{
 			printf("%c", str[i]);
+			i++;
 		}
 	}
 }

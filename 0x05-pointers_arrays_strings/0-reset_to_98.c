@@ -5,7 +5,7 @@
  * Return: the reseted number
  */
 
-void reset_to_98(int *n)
+int reset_to_98(int *n)
 {
 	*n = 98;
 

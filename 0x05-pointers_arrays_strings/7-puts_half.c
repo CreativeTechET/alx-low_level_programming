@@ -15,14 +15,17 @@ void puts_half(char *str)
 		int n = len / 2;
 		int i = n + 1;
 
-		while (i > n)
-		{
-			if (i <= len)
+		for (j = 0; j < len; j++)
+			while (i > n)
 			{
-				break;
+
+				if (i <= len)
+				{
+					break;
+				}
+				printf("%c", str[i]);
+				i++;
 			}
-			printf("%c", str[i]);
-			i++;
 		}
 	}
 }

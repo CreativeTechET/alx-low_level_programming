@@ -13,9 +13,9 @@ void print_array(int *a, int n)
 	
 	if (a[i]=!'\0')
 	{
-		for (i = 0; a[i]!='\0' ; i++)
+		for (i = 0; i < n; i++)
 		{
-			printf("%i, ",a[n]);
+			printf("%i, ",a[i]);
 		}
 	}
 	else

@@ -13,8 +13,8 @@ void print_rev(char *s)
 
 	while (len >= i)
 	{
-		tmp = s[i-1];
-		puts(tmp);
+		tmp = s[i - 1];
+		puts(*tmp);
 		i--;
 	}
 }

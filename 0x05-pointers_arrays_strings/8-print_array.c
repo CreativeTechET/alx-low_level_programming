@@ -10,8 +10,6 @@
 void print_array(int *a, int n)
 {
 	int i;
-	while (a[i] != '\0')
-	{
-		printf("%i, ", a[i]);
-	}
+	for (i = 0; i < n; i++)
+		printf("%d, ",a)
 }

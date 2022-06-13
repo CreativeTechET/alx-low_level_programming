@@ -6,8 +6,8 @@ void rev_string(char *s)
 	int len = (strlen(s));
 	int i;
 
-	for (i = 0; i <= len; len--)
+	for (i = len - 1; i >= 0; i--)
 	{
-		printf("%s", s[len - 1]);
+		printf("%c", s[i]);
 	}
 }

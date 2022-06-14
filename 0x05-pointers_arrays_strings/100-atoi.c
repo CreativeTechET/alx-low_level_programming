@@ -10,7 +10,7 @@
 
 int _atoi(char *s)
 {
-	int n = strto(s);
+	int n = stoi(s);
 
 	return (n);
 }

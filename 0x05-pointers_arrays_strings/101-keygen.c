@@ -9,14 +9,14 @@
 
 int main(void)
 {
-	int n;
+	int n,k;
 	int i = 0;
 
 	srand(time(NULL));
 	while (i < 1)
 	{
 		n = rand();
-		int k = rand() % 5;
+		k = rand() % 5;
 
 		i++;
 		printf("%d%c`\n", n, k);

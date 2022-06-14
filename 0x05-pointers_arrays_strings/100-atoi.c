@@ -11,21 +11,16 @@
 
 int _atoi(char *s)
 {
+	int i;
 
-	while (*s)
+	for (i = 0; s[i]!='\0'; i++)
 	{
-		if ( isdigit(*s) || ( (*s=='-'||*s=='+') && isdigit(*(s+1)) ))
+		int j;
+
+		if (isdigit(s[i]))
 		{
 
-		long val = strtol(s, &s, 10);
-		printf("%ld\n", val);
-		return (val);
-		}
-		else
-		{
-			s++;
-		}
-	}
+		j = 
 
-	return (1);
+	return (n);
 }

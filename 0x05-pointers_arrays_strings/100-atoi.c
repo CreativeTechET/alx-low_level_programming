@@ -12,17 +12,18 @@
 int _atoi(char *s)
 {
 
-while (*s)
-{
-	if ( isdigit(*s) || ( (*s=='-'||*s=='+') && isdigit(*(s+1)) ))
+	while (*s)
 	{
+		if ( isdigit(*s) || ( (*s=='-'||*s=='+') && isdigit(*(s+1)) ))
+		{
 
-	long val = strtol(s, &s, 10);
-	printf("%ld\n", val);
-	return (val);
-	}
-	else
-	{
-		s++;
+		long val = strtol(s, &s, 10);
+		printf("%ld\n", val);
+		return (val);
+		}
+		else
+		{
+			s++;
+		}
 	}
 }

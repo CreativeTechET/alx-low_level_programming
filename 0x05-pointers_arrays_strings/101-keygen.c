@@ -16,10 +16,10 @@ int main(void)
 	while (i < 1)
 	{
 		n = rand();
-		k = rand() % 5;
+		k = rand();
 
 		i++;
-		printf("%d%c`\n", n, k);
+		printf("%d%d\n", n, k);
 	}
 	return (0);
 }

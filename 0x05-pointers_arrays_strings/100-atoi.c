@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 
-while (*p)
+while (*s)
 {
 	if ( isdigit(*s) || ( (*s=='-'||*s=='+') && isdigit(*(s+1)) ))
 	{

@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 
@@ -16,12 +17,12 @@ while (*s)
 	if ( isdigit(*s) || ( (*s=='-'||*s=='+') && isdigit(*(s+1)) ))
 	{
 
-	long val = strtol(p, &s, 10);
+	long val = strtol(s, &s, 10);
 	printf("%ld\n", val);
 	return (val);
 	}
 	else
 	{
-		s++
+		s++;
 	}
 }

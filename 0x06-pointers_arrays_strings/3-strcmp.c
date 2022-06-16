@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcpm - function to compare two strings
- * @ds1: first destination
+ * _strcmp - function to compare two strings
+ * @s1: first destination
  * @s2: secound destination
- * Return: return  0 or 1
+ * Return: return  int
  */
 
 int _strcmp(char *s1, char *s2)

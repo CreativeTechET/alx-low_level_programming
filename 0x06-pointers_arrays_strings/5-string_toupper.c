@@ -11,17 +11,11 @@
 
 char *string_toupper(char *s)
 {
-	char *p = s;
+	int i;
 
-	while (*p)
+	for (i = 0; s[i]; i++)
 	{
-		*p = toupper(*p);
-		p++;
+		s[i] = (char)toupper(s[i]);
 	}
-	while (*p)
-	{
-		*p = toupper(*p);
-		p++;
-	}
-	return (p);
+	return (s);
 }

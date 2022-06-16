@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * string_toupper - function to convert string to uppercase
+ * cap_string - function to convert string to uppercase
  * @s: string
  * Return: string
  */

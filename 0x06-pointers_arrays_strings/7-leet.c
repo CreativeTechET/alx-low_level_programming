@@ -9,13 +9,12 @@
 char *leet(char *s)
 {
 	int i = 0;
-	char a = s;
 
 	for (; s[i]; i++)
 	{
 		if (s[i] == 'a' || s[i] == 'A')
 		{
-			s[i] = "4";
+			s[i] = '4';
 		}
 		if (s[i] == 'e' || s[i] == 'E')
 		{
@@ -35,7 +34,8 @@ char *leet(char *s)
 		}
 		else
 		{
-			s[i] = s[i]
+			s[i] = s[i];
 		}
 	}
+	return (s);
 }

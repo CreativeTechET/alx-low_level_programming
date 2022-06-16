@@ -16,4 +16,5 @@ char *cap_string(char *s)
 		*p = toupper(*p);
 		p++;
 	}
+	return (p);
 }

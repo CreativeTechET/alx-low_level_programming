@@ -1,20 +1,31 @@
-#include <ctype.h>
-#include <string.h>
-
+#include "main.h"
 /**
- * cap_string - function to convert string to uppercase
+ * cap_string - capitalizes all words
  * @s: string
- * Return: string
+ * Return: output
  */
-
 char *cap_string(char *s)
 {
-	char *p = s;
+	int i = 0;
 
-	while (*p)
+	if (s[i] >= 97 && s[i] <= 122)
 	{
-		*p = toupper(*p);
-		p++;
+		s[i] -= 32;
 	}
-	return (p);
+	while (s[i] != '\0')
+	{
+		if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t'
+		    || s[i] == ',' || s[i] == ';' || s[i] == '.'
+		    || s[i] == '!' || s[i] == '?' || s[i] == '"'
+		    || s[i] == '(' || s[i] == ')' || s[i] == '{'
+		    || s[i] == '}')
+		{
+			if (s[i + 1] >= 97 && s[i + 1] <= 122)
+			{
+				s[i + 1] -= 32;
+			}
+		}
+		i++;
+	}
+	return (s);
 }

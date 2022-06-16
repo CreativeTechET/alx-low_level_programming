@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 
+void print_number(int n);
 char *string_toupper(char *);
 char *leet(char *);
 char *cap_string(char *);

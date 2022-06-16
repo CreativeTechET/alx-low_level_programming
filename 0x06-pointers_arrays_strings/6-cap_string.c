@@ -1,5 +1,3 @@
-#include "main.h"
-#include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 
@@ -9,7 +7,7 @@
  * Return: string
  */
 
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	char *p = s;
 
@@ -18,10 +16,4 @@ char *string_toupper(char *s)
 		*p = toupper(*p);
 		p++;
 	}
-	while (*p)
-	{
-		*p = toupper(*p);
-		p++;
-	}
-	return (p);
 }

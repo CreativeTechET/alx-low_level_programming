@@ -1,40 +1,25 @@
 #include "main.h"
-
 /**
- * leet - function to encode some carachter
+ * leet - function to encode
  * @s: string
- * Return: returns the char
+ * Return: output
  */
 
 char *leet(char *s)
 {
-	int i = 0;
+	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
+	int i;
+	int j;
 
-	for (; s[i]; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
+		for (j = 0; alphaArr[j] != '\0'; j++)
 		{
-			s[i] = '4';
-		}
-		if (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = '3';
-		}
-		if (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = '0';
-		}
-		if (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = '7';
-		}
-		if (s[i] == 'l' || s[i] == 'L')
-		{
-			s[i] = '1';
-		}
-		else
-		{
-			s[i] = s[i];
+			if (s[i] == alphaArr[j])
+			{
+				s[i] = alphaArr[j + 1];
+				break;
+			}
 		}
 	}
 	return (s);

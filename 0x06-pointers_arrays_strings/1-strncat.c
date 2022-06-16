@@ -8,9 +8,9 @@
  * Return: full string
  */
 
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
-	if (src)
-	char *tmp = strncat(src, dest, n);
+	char *tmp = strncat(dest, src, n);
 
 	return (tmp);
+}

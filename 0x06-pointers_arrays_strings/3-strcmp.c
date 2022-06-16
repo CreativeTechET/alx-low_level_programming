@@ -9,7 +9,7 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	chat tmp = strcpm(s1, s2);
+	int tmp = strcmp(s1, s2);
 
-	return (rmp);
+	return (tmp);
 }

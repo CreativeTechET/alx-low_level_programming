@@ -8,9 +8,9 @@
 
 size_t print_list(const list_t *h)
 {
-	if (h == NULL)
+	if (h->str == NULL)
 	{
-		printf("[0] (nil)");
+		printf("[%d] (nil)\n", 0);
 	}
 	else
 	{
@@ -23,7 +23,8 @@ size_t print_list(const list_t *h)
 		{
 			count++;
 
-			printf("%s", tmp->str);
+			int len = strlen(tmp->str);
+			printf("[%d] %s", len, tmp->str);
 			tmp = tmp->next;
 
 			printf("\n");

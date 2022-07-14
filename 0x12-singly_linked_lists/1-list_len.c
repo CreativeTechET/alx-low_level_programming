@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * list_len - function to print out the number of elements

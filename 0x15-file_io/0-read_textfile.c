@@ -6,7 +6,6 @@
  * @filename: The name of the file to read
  * Return: 0 on success, -1 on error.
 */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fp;

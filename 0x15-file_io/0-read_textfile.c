@@ -19,25 +19,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	file = open(filename, O_RDONLY);
-	if ((int)file == FAILED)
-	{
-		free(buffer);
-		return (0);
-	}
+	file = open(filename, O_RDONLY);	
 	r = read(file, buffer, letters);
-	if ((int)r == FAILED)
-	{
-		free(buffer);
-		close(file);
-		return (0);
-	}
-	
-
-
 	wr = write(STDOUT_FILENO, buffer, r);
-	
-	if (wr != r|| (int)wr == FAILED)
+	if ((int)file == FAILED || (int)r == FAILED || wr != r|| (int)wr == FAILED)
 	{
 		free(buffer);
 		close(file);

@@ -1,5 +1,5 @@
 #ifndef MAIN
-#define MANI
+#define MAIN
 
 #include <unistd.h>
 

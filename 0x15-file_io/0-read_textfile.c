@@ -20,13 +20,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	file = open(filename, O_RDONLY);
-	if (file == FAILED)
+	if ((int)file == FAILED)
 	{
 		free(buffer);
 		return (0);
 	}
 	r = read(file, buffer, letters);
-	if (r == FAILED)
+	if ((int)r == FAILED)
 	{
 		free(buffer);
 		close(file);
@@ -37,7 +37,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	wr = write(STDOUT_FILENO, buffer, r);
 	
-	if ( wr != r|| wr == FAILED)
+	if ( (int)wr != r|| (int)wr == FAILED)
 	{
 		free(buffer);
 		close(file);

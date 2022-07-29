@@ -29,7 +29,9 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't read from file %s\n", argv[2]);
 		exit(98);
 	}
-	r = read(file_from, buffer, sizeof(buffer));
+
+	r = read(file_from, buffer, sizeof(buffer) - 10);
+
 	if (r == FAILED)
 		exit(99);
 
@@ -40,11 +42,13 @@ int main(int argc, char *argv[])
 	if (c == FAILED)
 	{
 		fprintf(stderr, "Error: Can't close fd %d", file_to);
+		exit(100);
 	}
 	c = close(file_from);
 	if (c == FAILED)
 	{
 		fprintf(stderr, "Error: Can't close fd %d", file_from);
+		exit(100);
 	}
 
 	return (SUCCESS);

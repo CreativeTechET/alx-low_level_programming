@@ -1,55 +1,50 @@
 #include "main.h"
-
 /**
- * main - main function to run the application
- * @argc: number of arguments to be passed to the program
- * @argv: array of arguments to be passed to the program
- * Return: 0 on success, 97,98,99 on failure
- */
-
+  * main - copy one file to another.
+  * @argc: argument count.
+  * @argv: argument vector.
+  *
+  * Return: 0.
+  */
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, i = 0, r, w, c;
-	char buffer[1024];
+	int file1, file2, size;
+	char buf[1024];
 
 	if (argc != 3)
 	{
-		fprintf(stderr, "Usage: cp file_from file_to\n");
-		exit(97);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	}
-	file_from = open(argv[1], O_RDONLY);
-	if (file_from == FAILED)
+	file1 =  open(argv[1], O_RDONLY, 0);
+	if (file1 == -1)
 	{
-		fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
-	if (file_from == FAILED)
+	file2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	if (file2 == 1)
 	{
-		fprintf(stderr, "Error: Can't read from file %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+	}
+	while ((size = read(file1, buf, 1024)) > 0)
+	{
+		if (write(file2, buf, size) != size)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+		}
+	}
+	if (size == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-
-	r = read(file_from, buffer, sizeof(buffer) - 10);
-
-	if (r == FAILED)
-		exit(99);
-
-	while (buffer[i] != '\0')
-		i++;
-	w = write(file_to, buffer, i);
-	c = close(file_to);
-	if (c == FAILED)
+	if (close(file1) != 0)
 	{
-		fprintf(stderr, "Error: Can't close fd %d", file_to);
-		exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file1), exit(100);
 	}
-	c = close(file_from);
-	if (c == FAILED)
+	if (close(file2) != 0)
 	{
-		fprintf(stderr, "Error: Can't close fd %d", file_from);
-		exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file2), exit(100);
 	}
-
-	return (SUCCESS);
+	return (0);
 }

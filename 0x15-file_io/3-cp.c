@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0600);
+	file_to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (file_from == FAILED)
 	{
 		fprintf(stderr, "Error: Can't read from file %s\n", argv[2]);
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	if (r == FAILED)
 		exit(99);
 
-	while (buffer[i])
+	while (buffer[i] != '\0')
 		i++;
 	w = write(file_to, buffer, i);
 	c = close(file_to);

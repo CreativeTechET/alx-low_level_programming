@@ -1,5 +1,7 @@
 #include "main.h"
 /**
+  * Description: This is a function to copy a files constent to another file using system call
+  *
   * main - copy one file to another.
   * @argc: argument count.
   * @argv: argument vector.
